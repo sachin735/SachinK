@@ -1,0 +1,131 @@
+exp1 
+list
+unset
+set 
+mkdir
+cd
+git init
+git fetch origin master
+git branch -m main master(1)
+git push -u master(2)
+
+
+exp2
+git branch feature_branch
+git checkout feature_branch
+nano s1.txt
+git add .
+git commite-m "exp2 done"
+git checkout master
+git merge fature_branch
+git push origin master
+
+exp 3
+nano s1.txt
+git add s1.txt
+git commit -m
+
+git branch feature
+nano s1.txt
+git checkout feature
+(not possible)
+git stash
+git checkout feature
+(possible)
+
+nano s2.txt
+git add s2.txt
+git commit -m
+
+git checkout master
+git add s1.txt
+git stash apply
+git commit -m
+
+exp 4
+cd ..
+cd ..
+cd ..
+cd ..
+cd h:
+mkdir project
+cd project
+git clone <repo link>
+
+exp 5
+(in master)
+touch s1.txt
+touch s2.txt
+touch s3.txt
+
+(in class)
+touch m1.txt
+touch m2.txt
+touch m3.txt
+
+git checkout master
+git merge class
+
+git log
+
+git checkout class
+git rebase master
+
+git log
+
+exp 6
+git branch feature_branch
+git checkout feature_branch
+
+nano s1.txt
+git add s1.txt
+git commit -m "commted"
+
+git push -u origin feature_branch
+
+git checkout master
+git merge feature_branch
+git push origin master
+
+exp7
+nano(5)
+git log
+git tag v1.0 <2nd id>
+git checkout v1.0
+git nano s1.txt
+git checckout master
+nano s1.txt
+
+exp8
+git branch b1
+git branch b2
+git checkout b1
+nano(5)
+git checkout b2
+git log
+git cherry-pick <2nd id>
+git cherry-pick --continue
+
+
+exp9
+nano(5)
+git log
+git show <commit id>
+
+exp10
+git fetch origin master
+git log
+git log --author="RAGHUME" --since="2024-01-01" --until="2024-03-22"
+GIT_PAGER=
+
+exp 11
+nano (6)
+git log -n 5
+
+exp12
+nano(3)-->open 1 file commit 3 times
+git log
+git revert <id>
+nano s1.txt
+
+
